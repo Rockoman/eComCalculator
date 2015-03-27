@@ -7,3 +7,12 @@ C:\Users\Marc\Documents\Visual Studio 2013\Projects\eComCalculator\eComCalculato
 C:\Users\Marc\Documents\Visual Studio 2013\Projects\eComCalculator\eComCalculator\obj\Debug\eComCalculator.csproj.GenerateResource.Cache
 C:\Users\Marc\Documents\Visual Studio 2013\Projects\eComCalculator\eComCalculator\obj\Debug\eComCalculator.exe
 C:\Users\Marc\Documents\Visual Studio 2013\Projects\eComCalculator\eComCalculator\obj\Debug\eComCalculator.pdb
+C:\Users\Marc\Documents\GitHub\eComCalculator\eComCalculator\bin\Debug\eComCalculator.exe.config
+C:\Users\Marc\Documents\GitHub\eComCalculator\eComCalculator\obj\Debug\eComCalculator.exe
+C:\Users\Marc\Documents\GitHub\eComCalculator\eComCalculator\obj\Debug\eComCalculator.pdb
+C:\Users\Marc\Documents\GitHub\eComCalculator\eComCalculator\bin\Debug\eComCalculator.exe
+C:\Users\Marc\Documents\GitHub\eComCalculator\eComCalculator\bin\Debug\eComCalculator.pdb
+C:\Users\Marc\Documents\GitHub\eComCalculator\eComCalculator\obj\Debug\eComCalculator.csprojResolveAssemblyReference.cache
+C:\Users\Marc\Documents\GitHub\eComCalculator\eComCalculator\obj\Debug\eComCalculator.Form1.resources
+C:\Users\Marc\Documents\GitHub\eComCalculator\eComCalculator\obj\Debug\eComCalculator.Properties.Resources.resources
+C:\Users\Marc\Documents\GitHub\eComCalculator\eComCalculator\obj\Debug\eComCalculator.csproj.GenerateResource.Cache

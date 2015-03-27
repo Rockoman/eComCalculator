@@ -23,28 +23,43 @@ namespace eComCalculator
         private void btnCal_Click(object sender, EventArgs e)
         {
 
-
+            //convert string value of price per item into a double
             double pricePer = Double.Parse(txtPricePer.Text);
+            //convert string value of total shipping costs into a double
             double shipCosts = Double.Parse(txtShippingCosts.Text);
+            //convert string value of the selling price per item into a double
             double sellPrice = Double.Parse(txtSellPrice.Text);
+            //convert the estimate shipping costs (after sold) into a double
             double estimateShip = Double.Parse(txtEstShipping.Text);
-            int quantity = Int32.Parse(txtQty.Text);
+            //convert string value of fee percentage into a double.
             double fees = Double.Parse(txtFee.Text) / 100;
+            //convert the string value of the total quantity into an int
+            int quantity = Int32.Parse(txtQty.Text);
 
 
+            //calculate the total costs of each item when factoring shipping costs
             double priceAfterShip = (pricePer * quantity + shipCosts) / quantity;
+            //display the new total costs
             txtPricePerAfter.Text = priceAfterShip.ToString("c", us);
 
+            //calculate the fees per item
             double feePerAfter = (fees * sellPrice);
+            //display the fees per item
             txtFeePerAfter.Text = feePerAfter.ToString("c", us); ;
 
+            //calculate the total fees
             double totalFees = feePerAfter * quantity;
+            //display the of fees
             txtTotalFeeAfter.Text = totalFees.ToString("c", us); 
 
+            //calculate how much profit will be earned through each sale
             double profitPer = sellPrice - feePerAfter - priceAfterShip - estimateShip;
+            //display profit
             txtProfitPerAfter.Text = profitPer.ToString("c", us);
 
+            //calculate total profit
             double totalProfit = profitPer * quantity;
+            //display total profit
             txtTotalProfitAfter.Text = totalProfit.ToString("c", us);
 
         }
@@ -58,6 +73,7 @@ namespace eComCalculator
         {
             char ch = e.KeyChar;
 
+
             if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
             {
                 e.Handled = true;
@@ -68,6 +84,7 @@ namespace eComCalculator
         {
             char ch = e.KeyChar;
 
+            //disable punctuation and text from input box
             if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
             {
                 e.Handled = true;
@@ -77,7 +94,7 @@ namespace eComCalculator
         private void txtQty_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
-
+            //disable punctuation and text from input box
             if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
             {
                 e.Handled = true;
@@ -87,7 +104,7 @@ namespace eComCalculator
         private void txtShippingCosts_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
-
+            //disable punctuation and text from input box
             if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
             {
                 e.Handled = true;
@@ -97,7 +114,7 @@ namespace eComCalculator
         private void txtEstShipping_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
-
+            //disable punctuation and text from input box
             if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
             {
                 e.Handled = true;
@@ -112,7 +129,7 @@ namespace eComCalculator
         private void txtFee_KeyPress(object sender, KeyPressEventArgs e)
         {
             char ch = e.KeyChar;
-
+            //disable punctuation and text from input box
             if (!Char.IsDigit(ch) && ch != 8 && ch != 46)
             {
                 e.Handled = true;
